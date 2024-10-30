@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Emilly Gabriele</title>
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <a href="index.html">
+                <h1>Emilly</h1>
+                <h1>Gabriele</h1>
+            </a>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#profissional">Profissional</a>
+            <a href="#materias">Materias</a>
+            <a href="#validacao">Validação</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <aside id="boasVindas">
+                <p>Seja Bem-Vindo! Meu nome é</p>
+                <h1>Emilly Gabriele Gomes da Rocha</h1>
+            </aside>
+            <article><img id="primeiraFoto" src="img/Imagem do WhatsApp de 2024-10-28 à(s) 15.09.20_96eede12.jpg"
+                    alt="Foto de Perfil">
+            </article>
+        </section>
+
+        <section id="sobre">
+            <div id="texto">
+                <h2>Sobre mim</h2>
+                <p>Eu sou uma pessoa que aprecia tanto momentos tranquilos quanto atividades energéticas.
+                    Nos meus tempos livres, gosto de ver séries e filmes, cozinhar pratos saborosos e colorir para
+                    relaxar. A minha relação com a minha família é muito próxima; moro com meus pais e minha irmã.
+                    Nós
+                    temos a tradição especial de almoçar juntos aos domingos, e nesses almoços, também contamos com
+                    a
+                    presença do meu namorado, o que fortalece ainda mais nossos laços familiares. <br><br>
+
+                    Na parte esportiva, sou uma pessoa ativa e equilibrada. Atualmente, pratico natação, embora o
+                    Muay
+                    Thai seja o meu esporte preferido, demonstrando que gosto de desafios e atividades dinâmicas.
+                    Além
+                    disso, sou amante dos animais e tenho dois cachorrinhos adoráveis: Snoopy, de 10 anos, e Izzy,
+                    uma
+                    fêmea de 7 anos, que são parte importante da minha vida.</p>
+            </div>
+            <div id="lista">
+                <ul>
+                    <li>RA: 323119651</li>
+                    <li>Curso: Análise e Desenvolvimento de Sistemas</li>
+                    <li>Período: 4°Período</li>
+                    <li>Endereço: Rua goiabeira 38 jardim, Leblon</li>
+                    <li>E-mail: <a href="mailto:emillygabrielerocha81@gmail.com">emillygabrielerocha81@gmail.com</a>
+                    </li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/emilly-gabriele-368b17274/">Emilly
+                            Gabriele</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="profissional">
+            <aside id="textoDois">
+                <h2>Profissional</h2>
+                <p>Atualmente, exerço a função de Assistente Operacional no Banco Inter, onde contribuo
+                    significativamente para a eficiência das operações diárias. Estou no penúltimo período do curso
+                    de
+                    Análise e Desenvolvimento de Sistemas e possuo certificações em Administração e Informática,
+                    além de
+                    estar cursando Inglês.
+
+                    Meu objetivo profissional é atuar em uma área que permita o aprendizado contínuo e a evolução
+                    constante, utilizando todas as habilidades adquiridas ao longo dos anos. Aspiro ser reconhecida
+                    pelo
+                    meu trabalho e profissionalismo, e desejo sempre estar em um ambiente desafiador e enriquecedor.
+                </p>
+            </aside>
+
+            <article><img id="segundaFoto" src="img/Imagem do WhatsApp de 2024-10-09 à(s) 09.36.56_5744717a.jpg"
+                    alt="Foto de Perfil">
+            </article>
+        </section>
+
+        <section id="materias">
+            <h2>Matérias</h2>
+
+            <div class="materia">
+                <div class="adicionarMateria">
+                    <input type="text" id="novaMateria" placeholder="Digite sua nova matéria">
+                    <button onclick="novaMateria()" id="btn-adicionar"
+                        title="Clique aqui para adicionar uma nova matéria"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="listaMateria">
+                <ul id="listaDeMaterias">
+                    <li>Sistemas computacionais e segurança
+                    </li>
+                    <li>Ambientes computacionais e conectividade
+                    </li>
+                    <li>Modelagem de software
+                    </li>
+                    <li>Gestão e qualidade de software
+                    </li>
+                    <li>Programação de soluções computacionais
+                    </li>
+                    <li>Modelos, métodos e técnicas da engenharia de software
+                    </li>
+                    <li>Inovação, sustentabilidade e competitividade empresarial
+                    </li>
+                    <li>Usabilidade, desenvolvimento web,mobile e jogos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="validacao">
+            <h2>Validação</h2>
+            <div>
+                <form id="form-cpf">
+                    <input type="text" id="cpf" name="cpf" maxlength="14" oninput="formatarCPF(this)"
+                        placeholder="Digite o CPF">
+                    <button id="btn-validar" type="submit">Validar</button>
+                </form>
+                <form id="form-email">
+                    <input type="email" id="email" name="email" placeholder="Digite o E-mail">
+                    <button id="btn-validar2" type="submit">Validar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>

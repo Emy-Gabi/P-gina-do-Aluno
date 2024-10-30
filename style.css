@@ -1,0 +1,217 @@
+body {
+    background-color: #fff9e7;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #cfe2f3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: -20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header a {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 12px;
+    font-weight: 200;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+    margin-top: -10px;
+    padding: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#boasVindas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+
+#primeiraFoto {
+    width: 400px;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+#texto {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 18px;
+}
+
+#texto h2 {
+    font-size: 2rem;
+}
+
+#lista {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#lista li {
+    list-style-type: none;
+}
+
+#profissional {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+#textoDois h2 {
+    font-size: 2rem;
+}
+
+#textoDois {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 18px;
+    align-self: center;
+}
+
+#segundaFoto {
+    width: 400px;
+}
+
+#materias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+#materias h2 {
+    font-size: 2rem;
+}
+
+#listaDeMaterias {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 18px;
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+#listaDeMaterias li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#novaMateria {
+    padding: 15px;
+    border-radius: 16px;
+    font-size: 1rem;
+    border: none;
+    width: 30rem;
+}
+
+#btn-adicionar {
+    background-color: rgb(236, 236, 236);
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-adicionar:hover {
+    background-color: rgb(180, 179, 179);
+}
+
+#validacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+#validacao h2{
+    font-size: 2rem;
+}
+
+#cpf{
+    padding: 15px;
+    border-radius: 16px;
+    font-size: 1rem;
+    border: none;
+    width: 30rem;
+    margin-bottom: 1rem;
+}
+#btn-validar{
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    border: none;
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-validar:hover{
+    background-color: rgb(180, 179, 179);
+}
+
+#email{
+    padding: 15px;
+    border-radius: 16px;
+    font-size: 1rem;
+    border: none;
+    width: 30rem;
+}
+
+#btn-validar2{
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    border: none;
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-validar2:hover{
+    background-color: rgb(180, 179, 179);
+}
+
