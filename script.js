@@ -12,14 +12,6 @@ function novaMateria() {
   }
 }
 
-let items = document.querySelectorAll("#listaDeMaterias");
-
-items.forEach(listaDeMaterias =>
-  listaDeMaterias.addEventListener("dragstart", () => {
-    listaDeMaterias.classList.add("dragging");
-  })
-)
-
 
 /*Validar o CPF*/
 function formatarCPF(input) {
@@ -75,13 +67,3 @@ emailForm.addEventListener('submit', (event) => {
     alert('E-mail inválido!');
   }
 });
-
-/*Adicionar novo texto*/ 
-function adicionarTexto() {
-  const textoEditavel = document.getElementById('texto-editavel');
-  const novoTexto = document.getElementById('novo-texto');
-
-  textoEditavel.value += '\n' + novoTexto.value;
-
-  novoTexto.value = '';
-}
